@@ -1,0 +1,16 @@
+package com.example.mapero.configs.exceptions;
+
+import org.springframework.http.HttpStatus;
+
+import java.util.List;
+
+public class BadRequestException extends CustomException {
+
+    public BadRequestException(String message) {
+        super(message, HttpStatus.BAD_REQUEST, List.of(message));
+    }
+
+    public BadRequestException(String message, List<String> errors) {
+        super(message, HttpStatus.BAD_REQUEST, errors);
+    }
+}
