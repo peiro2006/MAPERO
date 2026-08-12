@@ -1,1 +1,191 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+  --color-primary: #2563eb;
+  --color-primary-dark: #1d4ed8;
+  --color-bg: #f1f5f9;
+  --color-card: #ffffff;
+  --color-text: #0f172a;
+  --color-muted: #64748b;
+  --color-border: #cbd5e1;
+  --color-error: #dc2626;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  -webkit-font-smoothing: antialiased;
+}
+
+.landing-page,
+.auth-page,
+.home-page {
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding: 1.5rem;
+}
+
+.landing-title,
+.home-title {
+  font-size: 5rem;
+  letter-spacing: 0.3em;
+  margin: 0;
+  text-align: center;
+}
+
+.landing-buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.card {
+  background: var(--color-card);
+  border: 1px solid var(--color-border);
+  border-radius: 0.75rem;
+  padding: 2rem;
+  width: 100%;
+  max-width: 24rem;
+  box-shadow: 0 10px 25px rgb(15 23 42 / 0.08);
+}
+
+.card h1 {
+  margin: 0 0 1rem;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  margin-bottom: 1rem;
+}
+
+.form-field label {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--color-muted);
+}
+
+.form-field input {
+  padding: 0.6rem 0.75rem;
+  border: 1px solid var(--color-border);
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  font-family: inherit;
+}
+
+.form-field input:focus {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 1px;
+  border-color: transparent;
+}
+
+.form-hint {
+  color: var(--color-muted);
+  font-size: 0.85rem;
+  margin: 0 0 1rem;
+}
+
+.btn {
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  border: 1px solid transparent;
+  border-radius: 0.5rem;
+  padding: 0.65rem 1.25rem;
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background: var(--color-primary);
+  color: #fff;
+}
+
+.btn-primary:hover:not(:disabled) {
+  background: var(--color-primary-dark);
+}
+
+.btn-primary:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.btn-secondary {
+  background: transparent;
+  color: var(--color-primary);
+  border-color: var(--color-primary);
+}
+
+.btn-secondary:hover {
+  background: rgb(37 99 235 / 0.08);
+}
+
+.btn-block {
+  width: 100%;
+}
+
+.error-msg {
+  color: var(--color-error);
+  font-size: 0.9rem;
+  margin: 0 0 1rem;
+  text-align: center;
+}
+
+.link-back {
+  display: block;
+  margin-top: 1rem;
+  text-align: center;
+  color: var(--color-muted);
+  font-size: 0.875rem;
+  text-decoration: none;
+}
+
+.link-back:hover {
+  color: var(--color-primary);
+}
+
+.home-page {
+  position: relative;
+}
+
+.logout-btn {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+}
+
+.home-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.9rem;
+}
+
+.btn-jugar {
+  font-size: 1.5rem;
+  padding: 0.9rem 3.5rem;
+  border-radius: 0.75rem;
+}
+
+.btn-chico {
+  font-size: 0.85rem;
+  padding: 0.35rem 1.25rem;
+}
+
+.home-aviso {
+  margin: 0;
+  color: var(--color-muted);
+  font-size: 0.85rem;
+}
