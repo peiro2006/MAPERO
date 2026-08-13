@@ -1,0 +1,443 @@
+[33m>[39m Building...
+[32m√[39m Building...
+[1mInitial chunk files[22m[2m | [22m[1mNames[22m        [2m | [22m [1mRaw size[22m
+[32mmain.js[39m            [2m | [22m[2mmain[22m         [2m | [22m[36m102.63 kB[39m[2m | [22m
+[32mstyles.css[39m         [2m | [22m[2mstyles[22m       [2m | [22m  [36m3.30 kB[39m[2m | [22m
+
+[1m [22m                  [2m | [22m[1mInitial total[22m[2m | [22m[1m105.92 kB[22m
+
+Application bundle generation complete. [4.055 seconds] - 2026-08-13T04:17:41.278Z
+
+Watch mode enabled. Watching for file changes...
+NOTE: Raw file sizes do not reflect development server per-request transformations.
+  [32m➜[39m  [1mLocal[22m:   [36mhttp://localhost:[1m4200[22m/[39m
+[2m[32m  ➜[39m[22m[2m  press [22m[1mh + enter[22m[2m to show help[22m
+[33m>[39m Changes detected. Rebuilding...
+[32m√[39m Changes detected. Rebuilding...
+[1mInitial chunk files[22m[2m | [22m[1mNames[22m[2m | [22m [1mRaw size[22m
+[32mmain.js[39m            [2m | [22m[2mmain[22m [2m | [22m[36m102.79 kB[39m[2m | [22m
+
+Application bundle generation complete. [1.431 seconds] - 2026-08-13T04:31:17.555Z
+
+Page reload sent to client(s).
+[33m>[39m Changes detected. Rebuilding...
+[32m√[39m Changes detected. Rebuilding...
+[1mInitial chunk files[22m[2m | [22m[1mNames[22m[2m | [22m [1mRaw size[22m
+[32mmain.js[39m            [2m | [22m[2mmain[22m [2m | [22m[36m103.07 kB[39m[2m | [22m
+
+Application bundle generation complete. [0.407 seconds] - 2026-08-13T04:31:22.106Z
+
+Page reload sent to client(s).
+[33m>[39m Changes detected. Rebuilding...
+[32m√[39m Changes detected. Rebuilding...
+
+No output file changes.
+
+Application bundle generation complete. [0.173 seconds] - 2026-08-13T04:32:31.794Z
+
+[33m>[39m Changes detected. Rebuilding...
+[32m√[39m Changes detected. Rebuilding...
+[1mInitial chunk files[22m[2m | [22m[1mNames[22m[2m | [22m [1mRaw size[22m
+[32mmain.js[39m            [2m | [22m[2mmain[22m [2m | [22m[36m103.14 kB[39m[2m | [22m
+
+Application bundle generation complete. [0.158 seconds] - 2026-08-13T04:32:35.779Z
+
+Page reload sent to client(s).
+[33m>[39m Changes detected. Rebuilding...
+[32m√[39m Changes detected. Rebuilding...
+Application bundle generation failed. [0.445 seconds] - 2026-08-13T04:35:12.357Z
+
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2349: This expression is not callable.
+  Type 'Boolean' has no call signatures.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/dias-anteriores/dias-anteriores.ts:14:13:
+[37m      14 │         @if ([32mcargando[37m()) {
+         ╵              [32m~~~~~~~~[0m
+
+[39m[22m
+[33m>[39m Changes detected. Rebuilding...
+[32m√[39m Changes detected. Rebuilding...
+Application bundle generation failed. [0.333 seconds] - 2026-08-13T04:35:17.007Z
+
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2540: Cannot assign to 'cargando' because it is a read-only property.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/dias-anteriores/dias-anteriores.ts:183:11:
+[37m      183 │       this.[32mcargando[37m = false;
+          ╵            [32m~~~~~~~~[0m
+
+[39m[22m
+[33m>[39m Changes detected. Rebuilding...
+[32m√[39m Changes detected. Rebuilding...
+[1mInitial chunk files[22m[2m | [22m[1mNames[22m        [2m | [22m [1mRaw size[22m
+[32mmain.js[39m            [2m | [22m[2mmain[22m         [2m | [22m[36m103.24 kB[39m[2m | [22m
+[32mstyles.css[39m         [2m | [22m[2mstyles[22m       [2m | [22m  [36m3.30 kB[39m[2m | [22m
+
+[1m [22m                  [2m | [22m[1mInitial total[22m[2m | [22m[1m106.54 kB[22m
+
+Application bundle generation complete. [0.393 seconds] - 2026-08-13T04:35:21.229Z
+
+Page reload sent to client(s).
+[33m>[39m Changes detected. Rebuilding...
+[32m√[39m Changes detected. Rebuilding...
+Application bundle generation failed. [0.450 seconds] - 2026-08-13T04:35:28.439Z
+
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2349: This expression is not callable.
+  Type 'Boolean' has no call signatures.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/juego/juego.ts:22:13:
+[37m      22 │         @if ([32mcargando[37m()) {
+         ╵              [32m~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2349: This expression is not callable.
+  Type 'Boolean' has no call signatures.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/juego/juego.ts:28:20:
+[37m      28 │         } @else if ([32msinDia[37m()) {
+         ╵                     [32m~~~~~~[0m
+
+[39m[22m
+[33m>[39m Changes detected. Rebuilding...
+[32m√[39m Changes detected. Rebuilding...
+Application bundle generation failed. [0.466 seconds] - 2026-08-13T04:35:32.593Z
+
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2349: This expression is not callable.
+  Type 'Boolean' has no call signatures.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/juego/juego.ts:22:13:
+[37m      22 │         @if ([32mcargando[37m()) {
+         ╵              [32m~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2349: This expression is not callable.
+  Type 'Boolean' has no call signatures.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/juego/juego.ts:28:20:
+[37m      28 │         } @else if ([32msinDia[37m()) {
+         ╵                     [32m~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2349: This expression is not callable.
+  Type 'Boolean' has no call signatures.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/juego/juego.ts:51:40:
+[37m      51 │         @if (estado() === 'jugando' && ![32msinDia[37m() && !cargando()) {
+         ╵                                         [32m~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2349: This expression is not callable.
+  Type 'Boolean' has no call signatures.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/juego/juego.ts:51:53:
+[37m      51 │         @if (estado() === 'jugando' && !sinDia() && ![32mcargando[37m()) {
+         ╵                                                      [32m~~~~~~~~[0m
+
+[39m[22m
+[33m>[39m Changes detected. Rebuilding...
+[32m√[39m Changes detected. Rebuilding...
+Application bundle generation failed. [0.371 seconds] - 2026-08-13T04:35:37.638Z
+
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2349: This expression is not callable.
+  Type 'Boolean' has no call signatures.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/juego/juego.ts:22:13:
+[37m      22 │         @if ([32mcargando[37m()) {
+         ╵              [32m~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2349: This expression is not callable.
+  Type 'Boolean' has no call signatures.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/juego/juego.ts:28:20:
+[37m      28 │         } @else if ([32msinDia[37m()) {
+         ╵                     [32m~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2349: This expression is not callable.
+  Type 'Boolean' has no call signatures.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/juego/juego.ts:51:40:
+[37m      51 │         @if (estado() === 'jugando' && ![32msinDia[37m() && !cargando()) {
+         ╵                                         [32m~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2349: This expression is not callable.
+  Type 'Boolean' has no call signatures.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/juego/juego.ts:51:53:
+[37m      51 │         @if (estado() === 'jugando' && !sinDia() && ![32mcargando[37m()) {
+         ╵                                                      [32m~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2349: This expression is not callable.
+  Type 'Boolean' has no call signatures.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/juego/juego.ts:60:26:
+[37m      60 │               [disabled]="[32menviando[37m()"
+         ╵                           [32m~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2349: This expression is not callable.
+  Type 'Boolean' has no call signatures.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/juego/juego.ts:63:89:
+[37m      63 │ ...primary" type="button" (click)="enviar()" [disabled]="[32menviando[37m()">
+         ╵                                                          [32m~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2349: This expression is not callable.
+  Type 'Boolean' has no call signatures.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/juego/juego.ts:64:17:
+[37m      64 │               {{ [32menviando[37m() ? 'Enviando…' : 'Enviar' }}
+         ╵                  [32m~~~~~~~~[0m
+
+[39m[22m
+[33m>[39m Changes detected. Rebuilding...
+[32m√[39m Changes detected. Rebuilding...
+Application bundle generation failed. [0.432 seconds] - 2026-08-13T04:35:44.024Z
+
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2540: Cannot assign to 'sinDia' because it is a read-only property.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/juego/juego.ts:257:13:
+[37m      257 │         this.[32msinDia[37m = true;
+          ╵              [32m~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2540: Cannot assign to 'cargando' because it is a read-only property.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/juego/juego.ts:258:13:
+[37m      258 │         this.[32mcargando[37m = false;
+          ╵              [32m~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2540: Cannot assign to 'sinDia' because it is a read-only property.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/juego/juego.ts:264:11:
+[37m      264 │       this.[32msinDia[37m = true;
+          ╵            [32m~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2540: Cannot assign to 'cargando' because it is a read-only property.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/juego/juego.ts:265:11:
+[37m      265 │       this.[32mcargando[37m = false;
+          ╵            [32m~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2540: Cannot assign to 'enviando' because it is a read-only property.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/juego/juego.ts:275:9:
+[37m      275 │     this.[32menviando[37m = false;
+          ╵          [32m~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2540: Cannot assign to 'sinDia' because it is a read-only property.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/juego/juego.ts:276:9:
+[37m      276 │     this.[32msinDia[37m = false;
+          ╵          [32m~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2540: Cannot assign to 'cargando' because it is a read-only property.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/juego/juego.ts:277:9:
+[37m      277 │     this.[32mcargando[37m = false;
+          ╵          [32m~~~~~~~~[0m
+
+[39m[22m
+[33m>[39m Changes detected. Rebuilding...
+[32m√[39m Changes detected. Rebuilding...
+[1mInitial chunk files[22m[2m | [22m[1mNames[22m        [2m | [22m [1mRaw size[22m
+[32mmain.js[39m            [2m | [22m[2mmain[22m         [2m | [22m[36m103.59 kB[39m[2m | [22m
+[32mstyles.css[39m         [2m | [22m[2mstyles[22m       [2m | [22m  [36m3.30 kB[39m[2m | [22m
+
+[1m [22m                  [2m | [22m[1mInitial total[22m[2m | [22m[1m106.89 kB[22m
+
+Application bundle generation complete. [0.305 seconds] - 2026-08-13T04:35:49.727Z
+
+Page reload sent to client(s).
+[33m>[39m Changes detected. Rebuilding...
+[32m√[39m Changes detected. Rebuilding...
+[1mInitial chunk files[22m[2m | [22m[1mNames[22m[2m | [22m [1mRaw size[22m
+[32mmain.js[39m            [2m | [22m[2mmain[22m [2m | [22m[36m103.42 kB[39m[2m | [22m
+
+Application bundle generation complete. [0.163 seconds] - 2026-08-13T04:36:16.710Z
+
+Page reload sent to client(s).
+[33m>[39m Changes detected. Rebuilding...
+[32m√[39m Changes detected. Rebuilding...
+[1mInitial chunk files[22m[2m | [22m[1mNames[22m[2m | [22m [1mRaw size[22m
+[32mmain.js[39m            [2m | [22m[2mmain[22m [2m | [22m[36m103.15 kB[39m[2m | [22m
+
+Application bundle generation complete. [0.324 seconds] - 2026-08-13T04:36:20.953Z
+
+Page reload sent to client(s).
+[33m>[39m Changes detected. Rebuilding...
+[32m√[39m Changes detected. Rebuilding...
+[1mInitial chunk files[22m[2m | [22m[1mNames[22m [2m | [22m[1mRaw size[22m
+[32mstyles.css[39m         [2m | [22m[2mstyles[22m[2m | [22m [36m3.34 kB[39m[2m | [22m
+
+Application bundle generation complete. [0.012 seconds] - 2026-08-13T04:36:30.313Z
+
+Stylesheet update sent to client(s).
+[33m>[39m Changes detected. Rebuilding...
+[32m√[39m Changes detected. Rebuilding...
+Application bundle generation failed. [0.607 seconds] - 2026-08-13T04:38:23.465Z
+
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2349: This expression is not callable.
+  Type 'Boolean' has no call signatures.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/admin/admin.ts:26:15:
+[37m      26 │           @if ([32mcargandoMapa[37m()) {
+         ╵                [32m~~~~~~~~~~~~[0m
+
+[39m[22m
+[33m>[39m Changes detected. Rebuilding...
+[32m√[39m Changes detected. Rebuilding...
+Application bundle generation failed. [0.627 seconds] - 2026-08-13T04:38:28.020Z
+
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2349: This expression is not callable.
+  Type 'Boolean' has no call signatures.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/admin/admin.ts:26:15:
+[37m      26 │           @if ([32mcargandoMapa[37m()) {
+         ╵                [32m~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2349: This expression is not callable.
+  Type 'Boolean' has no call signatures.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/admin/admin.ts:93:70:
+[37m      93 │ ...imary" type="button" [disabled]="[32mguardando[37m()" (click)="guardar()">
+         ╵                                     [32m~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2349: This expression is not callable.
+  Type 'Boolean' has no call signatures.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/admin/admin.ts:94:17:
+[37m      94 │               {{ [32mguardando[37m() ? 'Guardando…' : 'Guardar' }}
+         ╵                  [32m~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2349: This expression is not callable.
+  Type 'Boolean' has no call signatures.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/admin/admin.ts:97:74:
+[37m      97 │ ... type="button" [disabled]="[32mguardando[37m()" (click)="eliminar()">El...
+         ╵                               [32m~~~~~~~~~[0m
+
+[39m[22m
+[33m>[39m Changes detected. Rebuilding...
+[32m√[39m Changes detected. Rebuilding...
+Application bundle generation failed. [0.472 seconds] - 2026-08-13T04:38:31.358Z
+
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2322: Type 'boolean' is not assignable to type 'WritableSignal<boolean>'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/admin/admin.ts:417:4:
+[37m      417 │     [32mthis.guardando[37m = true;
+          ╵     [32m~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2322: Type 'boolean' is not assignable to type 'WritableSignal<boolean>'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/admin/admin.ts:441:6:
+[37m      441 │       [32mthis.guardando[37m = false;
+          ╵       [32m~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2322: Type 'boolean' is not assignable to type 'WritableSignal<boolean>'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/admin/admin.ts:450:4:
+[37m      450 │     [32mthis.guardando[37m = true;
+          ╵     [32m~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2322: Type 'boolean' is not assignable to type 'WritableSignal<boolean>'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/admin/admin.ts:459:6:
+[37m      459 │       [32mthis.guardando[37m = false;
+          ╵       [32m~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2322: Type 'boolean' is not assignable to type 'WritableSignal<boolean>'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/admin/admin.ts:470:6:
+[37m      470 │       [32mthis.cargandoMapa[37m = false;
+          ╵       [32m~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2322: Type 'boolean' is not assignable to type 'WritableSignal<boolean>'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/admin/admin.ts:502:4:
+[37m      502 │     [32mthis.cargandoMapa[37m = false;
+          ╵     [32m~~~~~~~~~~~~~~~~~[0m
+
+[39m[22m
+[33m>[39m Changes detected. Rebuilding...
+[32m√[39m Changes detected. Rebuilding...
+Application bundle generation failed. [0.413 seconds] - 2026-08-13T04:38:34.724Z
+
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2322: Type 'boolean' is not assignable to type 'WritableSignal<boolean>'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/admin/admin.ts:441:6:
+[37m      441 │       [32mthis.guardando[37m = false;
+          ╵       [32m~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2322: Type 'boolean' is not assignable to type 'WritableSignal<boolean>'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/admin/admin.ts:450:4:
+[37m      450 │     [32mthis.guardando[37m = true;
+          ╵     [32m~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2322: Type 'boolean' is not assignable to type 'WritableSignal<boolean>'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/admin/admin.ts:459:6:
+[37m      459 │       [32mthis.guardando[37m = false;
+          ╵       [32m~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2322: Type 'boolean' is not assignable to type 'WritableSignal<boolean>'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/admin/admin.ts:470:6:
+[37m      470 │       [32mthis.cargandoMapa[37m = false;
+          ╵       [32m~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2322: Type 'boolean' is not assignable to type 'WritableSignal<boolean>'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/components/admin/admin.ts:502:4:
+[37m      502 │     [32mthis.cargandoMapa[37m = false;
+          ╵     [32m~~~~~~~~~~~~~~~~~[0m
+
+[39m[22m
+[33m>[39m Changes detected. Rebuilding...
+[32m√[39m Changes detected. Rebuilding...
+[1mInitial chunk files[22m[2m | [22m[1mNames[22m        [2m | [22m [1mRaw size[22m
+[32mmain.js[39m            [2m | [22m[2mmain[22m         [2m | [22m[36m103.58 kB[39m[2m | [22m
+[32mstyles.css[39m         [2m | [22m[2mstyles[22m       [2m | [22m  [36m3.34 kB[39m[2m | [22m
+
+[1m [22m                  [2m | [22m[1mInitial total[22m[2m | [22m[1m106.91 kB[22m
+
+Application bundle generation complete. [0.471 seconds] - 2026-08-13T04:38:40.291Z
+
+Page reload sent to client(s).
+[33m>[39m Changes detected. Rebuilding...
+[32m√[39m Changes detected. Rebuilding...
+[1mInitial chunk files[22m[2m | [22m[1mNames[22m[2m | [22m [1mRaw size[22m
+[32mmain.js[39m            [2m | [22m[2mmain[22m [2m | [22m[36m103.39 kB[39m[2m | [22m
+
+Application bundle generation complete. [0.430 seconds] - 2026-08-13T04:39:03.025Z
+
+Page reload sent to client(s).
+[33m>[39m Changes detected. Rebuilding...
+[32m√[39m Changes detected. Rebuilding...
+[1mInitial chunk files[22m[2m | [22m[1mNames[22m[2m | [22m [1mRaw size[22m
+[32mmain.js[39m            [2m | [22m[2mmain[22m [2m | [22m[36m103.26 kB[39m[2m | [22m
+
+Application bundle generation complete. [0.524 seconds] - 2026-08-13T04:40:08.746Z
+
+Page reload sent to client(s).

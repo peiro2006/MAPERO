@@ -184,6 +184,18 @@ body {
   padding: 0.35rem 1.25rem;
 }
 
+.admin-btn {
+  position: absolute;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  font-size: 0.85rem;
+  padding: 0.35rem 1.25rem;
+}
+
+.admin-btn[hidden] {
+  display: none;
+}
+
 .home-aviso {
   margin: 0;
   color: var(--color-muted);

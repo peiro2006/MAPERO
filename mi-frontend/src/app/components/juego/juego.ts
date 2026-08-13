@@ -1,9 +1,10 @@
 import { Component, inject, signal, viewChild } from '@angular/core';
 import { ElementRef } from '@angular/core';
-import { Router } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { firstValueFrom } from 'rxjs';
 import { Dia } from '../../models/dia';
 import { DiasService } from '../../services/dias.service';
+import { fechaHoyISO } from '../../utils/fechas';
 import { esRespuestaCorrecta } from '../../utils/normalizar';
 import { MapComponent } from '../map/map';
 
@@ -16,10 +17,22 @@ type Estado = 'jugando' | 'resultado';
     <main class="juego-page">
       <section class="juego-mapa">
         <button class="juego-volver" type="button" (click)="volver()">← Volver</button>
-        <span class="juego-contador">Día {{ indiceActual + 1 }} de {{ indice().length }}</span>
         <app-map [dia]="dia()" />
 
-        @if (estado() === 'resultado') {
+        @if (cargando()) {
+          <div class="juego-overlay">
+            <div class="juego-cartel">
+              <p class="juego-revelacion">Cargando…</p>
+            </div>
+          </div>
+        } @else if (sinDia()) {
+          <div class="juego-overlay">
+            <div class="juego-cartel">
+              <p class="juego-revelacion">Hoy no hay día programado</p>
+              <button class="btn btn-primary" type="button" (click)="volver()">Volver al inicio</button>
+            </div>
+          </div>
+        } @else if (estado() === 'resultado') {
           <div class="juego-overlay">
             <div class="juego-cartel" [class.correcto]="acerto()" [class.incorrecto]="!acerto()">
               @if (acerto()) {
@@ -28,28 +41,27 @@ type Estado = 'jugando' | 'resultado';
                 <p class="juego-veredicto">INCORRECTO...</p>
                 <p class="juego-revelacion">Era <strong>{{ dia()?.nombre }}</strong></p>
               }
-              <button class="btn btn-primary" type="button" (click)="continuar()">
-                {{ esUltimo() ? 'Volver al inicio' : 'Siguiente día' }}
-              </button>
+              <button class="btn btn-primary" type="button" (click)="volver()">Volver al inicio</button>
             </div>
           </div>
         }
       </section>
 
       <section class="juego-consola">
-        @if (estado() === 'jugando') {
+        @if (estado() === 'jugando' && !sinDia() && !cargando()) {
           <p class="juego-pregunta">¿Qué figura histórica es?</p>
-          <form class="juego-form" (ngSubmit)="enviar()">
+          <form class="juego-form" (ngSubmit)="enviar($event)">
             <input
               #respuesta
               class="juego-input"
               type="text"
               placeholder="Escribí tu respuesta…"
               autocomplete="off"
-              [disabled]="enviando"
+              [disabled]="enviando()"
+              (keydown.enter)="enviar($event)"
             />
-            <button class="btn btn-primary" type="submit" [disabled]="enviando">
-              {{ enviando ? 'Enviando…' : 'Enviar' }}
+            <button class="btn btn-primary" type="button" (click)="enviar()" [disabled]="enviando()">
+              {{ enviando() ? 'Enviando…' : 'Enviar' }}
             </button>
           </form>
           @if (error()) {
@@ -89,17 +101,6 @@ type Estado = 'jugando' | 'resultado';
 
     .juego-volver:hover {
       background: #f1f5f9;
-    }
-
-    .juego-contador {
-      position: absolute;
-      top: 3.1rem;
-      left: 0.75rem;
-      font-size: 0.85rem;
-      color: #0f172a;
-      background: rgb(255 255 255 / 0.85);
-      padding: 0.2rem 0.6rem;
-      border-radius: 0.25rem;
     }
 
     .juego-overlay {
@@ -197,29 +198,27 @@ type Estado = 'jugando' | 'resultado';
 })
 export class JuegoComponent {
   private readonly router = inject(Router);
+  private readonly route = inject(ActivatedRoute);
   private readonly dias = inject(DiasService);
 
   private readonly respuestaRef = viewChild<ElementRef<HTMLInputElement>>('respuesta');
 
-  protected readonly indice = signal<string[]>([]);
-  protected indiceActual = 0;
   protected readonly dia = signal<Dia | null>(null);
   protected readonly estado = signal<Estado>('jugando');
   protected readonly acerto = signal(false);
   protected readonly error = signal('');
-  protected enviando = false;
+  protected readonly cargando = signal(true);
+  protected readonly sinDia = signal(false);
+  protected readonly enviando = signal(false);
 
   constructor() {
     void this.iniciar();
   }
 
-  protected esUltimo(): boolean {
-    return this.indiceActual >= this.indice().length - 1;
-  }
-
-  protected async enviar(): Promise<void> {
+  protected enviar(ev?: Event): void {
+    ev?.preventDefault();
     const d = this.dia();
-    if (!d || this.enviando || this.estado() !== 'jugando') {
+    if (!d || this.enviando() || this.estado() !== 'jugando') {
       return;
     }
     const texto = this.respuestaRef()?.nativeElement.value ?? '';
@@ -227,19 +226,11 @@ export class JuegoComponent {
       this.error.set('Escribí una respuesta');
       return;
     }
-    this.enviando = true;
+    this.enviando.set(true);
     this.acerto.set(esRespuestaCorrecta(d, texto));
     this.error.set('');
     this.estado.set('resultado');
-    this.enviando = false;
-  }
-
-  protected continuar(): void {
-    if (this.esUltimo()) {
-      this.volver();
-      return;
-    }
-    void this.cargarDia(this.indiceActual + 1);
+    this.enviando.set(false);
   }
 
   protected volver(): void {
@@ -248,25 +239,42 @@ export class JuegoComponent {
 
   private async iniciar(): Promise<void> {
     try {
-      const idx = await firstValueFrom(this.dias.indice());
-      this.indice.set(idx.dias);
-      if (idx.dias.length === 0) {
-        throw new Error('No hay días cargados');
+      const idParam = this.route.snapshot.paramMap.get('id');
+      if (idParam) {
+        await this.cargarDia(idParam);
+        return;
       }
-      await this.cargarDia(0);
+      const idx = await firstValueFrom(this.dias.indice());
+      const hoy = fechaHoyISO();
+      let resumen = idx.dias.find((d) => d.fecha === hoy);
+      if (!resumen) {
+        const pasados = idx.dias
+          .filter((d) => d.fecha < hoy)
+          .sort((a, b) => (a.fecha < b.fecha ? 1 : -1));
+        resumen = pasados[0] ?? null;
+      }
+      if (!resumen) {
+        this.sinDia.set(true);
+        this.cargando.set(false);
+        return;
+      }
+      await this.cargarDia(resumen.id);
     } catch (err) {
       console.error('No se pudo iniciar el juego', err);
+      this.sinDia.set(true);
+      this.cargando.set(false);
       this.error.set('No se pudieron cargar los días');
     }
   }
 
-  private async cargarDia(i: number): Promise<void> {
-    this.indiceActual = i;
-    this.dia.set(await firstValueFrom(this.dias.dia(this.indice()[i])));
+  private async cargarDia(id: string): Promise<void> {
+    this.dia.set(await firstValueFrom(this.dias.dia(id)));
     this.estado.set('jugando');
     this.acerto.set(false);
     this.error.set('');
-    this.enviando = false;
+    this.enviando.set(false);
+    this.sinDia.set(false);
+    this.cargando.set(false);
     const input = this.respuestaRef();
     if (input) {
       input.nativeElement.value = '';
