@@ -49,8 +49,9 @@ export class LoginComponent {
     this.error = '';
     const { email, password } = this.form.getRawValue();
     this.auth.login(email!, password!).subscribe({
-      next: () => {
+      next: (resp) => {
         this.loading = false;
+        this.auth.guardarSesion(resp);
         this.router.navigate(['/home']);
       },
       error: (err) => {

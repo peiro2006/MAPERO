@@ -60,8 +60,9 @@ export class RegisterComponent {
     this.error = '';
     const { nombre, email, password } = this.form.getRawValue();
     this.auth.register(nombre!, email!, password!).subscribe({
-      next: () => {
+      next: (resp) => {
         this.loading = false;
+        this.auth.guardarSesion(resp);
         this.router.navigate(['/login']);
       },
       error: (err) => {

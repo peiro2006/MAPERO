@@ -1,3 +1,5 @@
 {
-  "dias": ["san-martin"]
+  "dias": [
+    { "id": "san-martin", "nombre": "José de San Martín", "fecha": "2026-08-12" }
+  ]
 }

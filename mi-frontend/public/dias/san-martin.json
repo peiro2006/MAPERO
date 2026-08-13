@@ -1,6 +1,7 @@
 {
   "nombre": "José de San Martín",
   "apodos": ["san martin", "jose de san martin"],
+  "fecha": "2026-08-12",
   "nacimiento": { "lat": -27.79, "lon": -55.89, "anio": 1778 },
   "fallecimiento": { "lat": 50.73, "lon": 1.59, "anio": 1850 }
 }

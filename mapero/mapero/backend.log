@@ -1,0 +1,78 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -------------------------< com.example:mapero >-------------------------
+[INFO] Building  0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> spring-boot:4.0.7:run (default-cli) > test-compile @ mapero >>>
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ mapero ---
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] Copying 0 resource from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.14.1:compile (default-compile) @ mapero ---
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 29 source files with javac [debug parameters release 21] to target\classes
+[INFO] /C:/Users/Win11/Desktop/MAPERO/mapero/mapero/src/main/java/com/example/mapero/security/JwtAuthenticationFilter.java: C:\Users\Win11\Desktop\MAPERO\mapero\mapero\src\main\java\com\example\mapero\security\JwtAuthenticationFilter.java uses or overrides a deprecated API.
+[INFO] /C:/Users/Win11/Desktop/MAPERO/mapero/mapero/src/main/java/com/example/mapero/security/JwtAuthenticationFilter.java: Recompile with -Xlint:deprecation for details.
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ mapero ---
+[INFO] skip non existing resourceDirectory C:\Users\Win11\Desktop\MAPERO\mapero\mapero\src\test\resources
+[INFO] 
+[INFO] --- compiler:3.14.1:testCompile (default-testCompile) @ mapero ---
+[INFO] Recompiling the module because of changed dependency.
+[INFO] Compiling 1 source file with javac [debug parameters release 21] to target\test-classes
+[INFO] 
+[INFO] <<< spring-boot:4.0.7:run (default-cli) < test-compile @ mapero <<<
+[INFO] 
+[INFO] 
+[INFO] --- spring-boot:4.0.7:run (default-cli) @ mapero ---
+[INFO] Attaching agents: []
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v4.0.7)
+
+2026-08-13T01:47:25.452-03:00  INFO 9804 --- [mapero] [           main] com.example.mapero.MaperoApplication     : Starting MaperoApplication using Java 21.0.10 with PID 9804 (C:\Users\Win11\Desktop\MAPERO\mapero\mapero\target\classes started by Win11 in C:\Users\Win11\Desktop\MAPERO\mapero\mapero)
+2026-08-13T01:47:25.458-03:00  INFO 9804 --- [mapero] [           main] com.example.mapero.MaperoApplication     : No active profile set, falling back to 1 default profile: "default"
+2026-08-13T01:47:26.332-03:00  INFO 9804 --- [mapero] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-08-13T01:47:26.419-03:00  INFO 9804 --- [mapero] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 70 ms. Found 2 JPA repository interfaces.
+2026-08-13T01:47:27.094-03:00  INFO 9804 --- [mapero] [           main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-08-13T01:47:27.119-03:00  INFO 9804 --- [mapero] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-08-13T01:47:27.120-03:00  INFO 9804 --- [mapero] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.22]
+2026-08-13T01:47:27.190-03:00  INFO 9804 --- [mapero] [           main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1654 ms
+2026-08-13T01:47:27.362-03:00  INFO 9804 --- [mapero] [           main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-08-13T01:47:27.421-03:00  INFO 9804 --- [mapero] [           main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.19.Final
+2026-08-13T01:47:27.952-03:00  INFO 9804 --- [mapero] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-08-13T01:47:27.993-03:00  INFO 9804 --- [mapero] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-08-13T01:47:28.916-03:00  INFO 9804 --- [mapero] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3bcedb06
+2026-08-13T01:47:28.923-03:00  INFO 9804 --- [mapero] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-08-13T01:47:29.332-03:00  INFO 9804 --- [mapero] [           main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://ep-young-star-ac7jppz9-pooler.sa-east-1.aws.neon.tech/neondb?sslmode=require]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 18.4
+	Default catalog/schema: neondb/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-08-13T01:47:30.685-03:00  INFO 9804 --- [mapero] [           main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-08-13T01:47:31.098-03:00  INFO 9804 --- [mapero] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-08-13T01:47:31.212-03:00  INFO 9804 --- [mapero] [           main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-08-13T01:47:31.602-03:00  INFO 9804 --- [mapero] [           main] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2026-08-13T01:47:31.608-03:00  WARN 9804 --- [mapero] [           main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2026-08-13T01:47:31.660-03:00  WARN 9804 --- [mapero] [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-08-13T01:47:32.406-03:00  INFO 9804 --- [mapero] [           main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-08-13T01:47:32.415-03:00  INFO 9804 --- [mapero] [           main] com.example.mapero.MaperoApplication     : Started MaperoApplication in 7.526 seconds (process running for 8.023)
+2026-08-13T01:49:27.359-03:00  INFO 9804 --- [mapero] [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-08-13T01:49:27.366-03:00  INFO 9804 --- [mapero] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-08-13T01:49:27.368-03:00  INFO 9804 --- [mapero] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms

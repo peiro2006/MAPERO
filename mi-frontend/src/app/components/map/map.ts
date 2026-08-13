@@ -181,11 +181,11 @@ export class MapComponent {
     const ellipse = document.createElementNS(NS, 'ellipse');
     ellipse.setAttribute('cx', String(x));
     ellipse.setAttribute('cy', String(y));
-    ellipse.setAttribute('rx', '2.8');
-    ellipse.setAttribute('ry', '2.65');
+    ellipse.setAttribute('rx', '4');
+    ellipse.setAttribute('ry', '4');
     ellipse.setAttribute('fill', 'none');
     ellipse.setAttribute('stroke', color);
-    ellipse.setAttribute('stroke-width', '0.9');
+    ellipse.setAttribute('stroke-width', '1.1');
     layer.appendChild(ellipse);
 
     const text = document.createElementNS(NS, 'text');
